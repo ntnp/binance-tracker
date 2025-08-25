@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
+    /* Import paths */
+    "baseUrl": ".",
+    "paths": {
+      "_lib/*": ["./lib/*"],
+      "_app/*": ["./app/*"],
+
+      "_types/*": ["./lib/types/*"],
+
+      "_api/*": ["./app/api/*"],
+
+      "_hooks/*": ["./lib/hooks/*"],
+      "_utils/*": ["./lib/utils/*"],
+
+      "_theme/*": ["./lib/theme/*"],
+
+      "_ui/*": ["./lib/components/ui/*"],
+
+      "_features/*": ["./app/features/*"]
+    }
+  },
+  "include": ["lib", "app"]
+}

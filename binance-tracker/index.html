@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Binance Tracker</title>
+    <meta name="description" content="Pricing updates tracker for Binance symbols.">
+
+    <script>
+      const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+      toggleDark(darkQuery.matches);
+      darkQuery.addEventListener('change', e => toggleDark(e.matches));
+
+      function toggleDark(value) {
+        document.documentElement.classList[value ? 'add' : 'remove']('dark');
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/app/main.tsx"></script>
+  </body>
+</html>

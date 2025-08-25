@@ -1,0 +1,39 @@
+@import '@radix-ui/colors/slate.css';
+@import '@radix-ui/colors/slate-dark.css';
+
+@import '@radix-ui/colors/green.css';
+@import '@radix-ui/colors/green-dark.css';
+
+@import '@radix-ui/colors/red.css';
+@import '@radix-ui/colors/red-dark.css';
+
+:root, .light {
+    --accent-1: #fafdfe;
+    --accent-2: #f3fafb;
+    --accent-3: #e0f6fa;
+    --accent-4: #cdf0f6;
+    --accent-5: #b9e8ef;
+    --accent-6: #a3dce5;
+    --accent-7: #85ccd7;
+    --accent-8: #52b7c6;
+    --accent-9: #2597a6;
+    --accent-10: #0a8a99;
+    --accent-11: #007d8c;
+    --accent-12: #123c42;
+}
+.dark {
+    color-scheme: dark;
+
+    --accent-1: #0a1314;
+    --accent-2: #111b1d;
+    --accent-3: #0f2c30;
+    --accent-4: #07393f;
+    --accent-5: #0f464d;
+    --accent-6: #1b545c;
+    --accent-7: #266770;
+    --accent-8: #2d7e8a;
+    --accent-9: #2597a6;
+    --accent-10: #388893;
+    --accent-11: #63cbdb;
+    --accent-12: #b8ebf3;
+}
